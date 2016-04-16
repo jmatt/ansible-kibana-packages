@@ -1,5 +1,5 @@
 ansible-kibana-packages
-==============================
+=======================
 
 [![Build Status](https://travis-ci.org/jmatt/ansible-kibana-packages.svg?branch=master)](https://travis-ci.org/jmatt/ansible-kibana-packages)
 
@@ -15,4 +15,4 @@ Example Playbook
 License
 -------
 
-See the [LICENSE file](/LICENSE).
+See the [LICENSE file](https://github.com/lsst-sqre/ansible-kibana-packages/blob/master/LICENSE).

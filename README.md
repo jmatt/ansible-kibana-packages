@@ -15,4 +15,4 @@ Example Playbook
 License
 -------
 
-See the [LICENSE file](https://github.com/lsst-sqre/ansible-kibana-packages/blob/master/LICENSE).
+The MIT License. See the [LICENSE file](https://github.com/lsst-sqre/ansible-kibana-packages/blob/master/LICENSE).

@@ -3,6 +3,7 @@
 
 - name: Stop the Kibana service.
   service: name=kibana state=stopped
+  ignore_errors: true
 
 - include: redhat.yml
   when: ansible_os_family == 'RedHat'

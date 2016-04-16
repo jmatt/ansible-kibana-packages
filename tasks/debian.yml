@@ -1,17 +1,17 @@
 ---
 # Install Kibana packages on debian based distributions.
 
-- name: Install Kibana repo
-  apt_repository: repo='deb http://packages.elastic.co/kibana/4.5/debian stable main' state=present
+- name: Add Kibana apt key.
+  apt_key: url=https://packages.elastic.co/GPG-KEY-elasticsearch state=present
 
-#- name: Install Kibana packages.
-#  apt: name=kibana update_cache=yes state=latest install_recommends=no
+- name: Install apt-transport-https dependency.
+  apt: name=apt-transport-https update_cache=yes state=latest install_recommends=no
 
-- name: Get Kibana deb file.
-  get_url: url=https://download.elastic.co/kibana/kibana/kibana_5.0.0-alpha1_amd64.deb dest=/tmp/kibana_5.0.0-alpha1_amd64.deb
+- name: Install Kibana repository.
+  apt_repository: repo='deb http://packages.elastic.co/kibana/5.0.0-alpha/debian stable main' state=present
 
 - name: Install Kibana packages.
-  apt: deb=/tmp/kibana_5.0.0-alpha1_amd64.deb
+  apt: name=kibana update_cache=yes state=latest install_recommends=no
 
 - name: Configure Kibana.
   include: kibana.yml

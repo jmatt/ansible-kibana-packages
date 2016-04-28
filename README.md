@@ -3,7 +3,7 @@ ansible-kibana-packages
 
 [![Build Status](https://travis-ci.org/jmatt/ansible-kibana-packages.svg?branch=master)](https://travis-ci.org/jmatt/ansible-kibana-packages)
 
-Install kibana v 5.0 packages for LSST SQuaRE infrastructure.
+Install Kibana v 5.0 packages for LSST SQuaRE infrastructure.
 
 Example Playbook
 ----------------

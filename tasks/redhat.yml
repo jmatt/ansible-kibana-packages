@@ -2,14 +2,14 @@
 # Install Kibana packages on redhat base distributions.
 
 - name: Add the Kibana RPM key.
-  rpm_key: state=present key=https://packages.elastic.co/GPG-KEY-elasticsearch
+  rpm_key: state=present key=https://artifacts.elastic.co/GPG-KEY-elasticsearch
 
 - name: Add the Kibana repository.
   yum_repository:
     name: Kibana-repository
-    description: Kibana repository for 5.0.0-alpha.x packages
-    baseurl: http://packages.elastic.co/kibana/5.0.0-alpha/centos
-    gpgkey: http://packages.elastic.co/GPG-KEY-elasticsearch
+    description: Kibana repository for 5.x packages
+    baseurl: https://artifacts.elastic.co/packages/5.x/yum
+    gpgkey: https://artifacts.elastic.co/GPG-KEY-elasticsearch
     gpgcheck: yes
     enabled: yes
 
